@@ -1,0 +1,30 @@
+# 30 Days of Ethical Hacking: Day 01
+## Topic: Advanced Nmap & Service Fingerprinting
+
+### 📝 Overview
+My 10-day journey covered the basics of TCP/UDP port scanning. Day 01 of the 30-day "Deep Dive" focused on **Service Fingerprinting**—the art of identifying exactly what software and version are running behind an open port.
+
+### 🔍 Core Concepts
+
+#### 1. Service Fingerprinting (`-sV`)
+A standard port scan only tells you if a port is `Open`, `Closed`, or `Filtered`. Service fingerprinting goes deeper by sending specific probes to the open port to elicit a "banner" or response.
+* **Why it matters:** In ethical hacking, vulnerabilities are almost always version-specific. Knowing that a port is "Port 80" is useless; knowing it is "Apache 2.4.41" allows me to search for specific exploits (CVEs).
+
+#### 2. The "Cloudflare" Problem (Reverse Proxies)
+During today's lab, I encountered a "Cloudflare http proxy" banner.
+* **The Lesson:** Large websites use Reverse Proxies as a shield. When I scan them, I am fingerprinting the **Security Wall**, not the **Origin Server**. To perform a real assessment, an ethical hacker must find the "Origin IP" to bypass the proxy.
+
+#### 3. Nmap States
+* **Open:** An application is actively listening.
+* **Closed:** The port is reachable but no application is listening.
+* **Filtered:** A firewall or filter is dropping the packets before Nmap can receive a response.
+
+---
+
+### 🛠️ Lab Activity: Practical Recon
+
+**Target:** `hackthissite.org` (A legal sandbox for security testing)
+
+#### Command Used:
+```bash
+nmap -sV -oN day1_scan.txt hackthissite.org
