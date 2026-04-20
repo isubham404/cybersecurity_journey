@@ -1,0 +1,45 @@
+# Nmap 7.95 scan initiated Mon Apr 20 11:50:18 2026 as: /usr/lib/nmap/nmap --privileged -sV -oN day1_scan.txt hackthissite.com
+Nmap scan report for hackthissite.com (76.223.54.146)
+Host is up (0.014s latency).
+Other addresses for hackthissite.com (not scanned): 13.248.169.48 64:ff9b::4cdf:3692 64:ff9b::df8:a930
+rDNS record for 76.223.54.146: a904c694c05102f30.awsglobalaccelerator.com
+Not shown: 998 filtered tcp ports (no-response)
+PORT    STATE SERVICE    VERSION
+80/tcp  open  http-proxy HAProxy http proxy 2.0.0 or later
+443/tcp open  ssl/http   Golang net/http server
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port443-TCP:V=7.95%T=SSL%I=7%D=4/20%Time=69E64B4B%P=x86_64-pc-linux-gnu
+SF:%r(GetRequest,D8,"HTTP/1\.0\x20200\x20OK\r\nContent-Type:\x20text/html\
+SF:r\nDate:\x20Mon,\x2020\x20Apr\x202026\x2015:50:30\x20GMT\r\nContent-Len
+SF:gth:\x20114\r\n\r\n<!DOCTYPE\x20html><html><head><script>window\.onload
+SF:=function\(\){window\.location\.href=\"/lander\"}</script></head></html
+SF:>")%r(HTTPOptions,5B,"HTTP/1\.0\x20405\x20Method\x20Not\x20Allowed\r\nD
+SF:ate:\x20Mon,\x2020\x20Apr\x202026\x2015:50:30\x20GMT\r\nContent-Length:
+SF:\x200\r\n\r\n")%r(FourOhFourRequest,D8,"HTTP/1\.0\x20200\x20OK\r\nConte
+SF:nt-Type:\x20text/html\r\nDate:\x20Mon,\x2020\x20Apr\x202026\x2015:50:31
+SF:\x20GMT\r\nContent-Length:\x20114\r\n\r\n<!DOCTYPE\x20html><html><head>
+SF:<script>window\.onload=function\(\){window\.location\.href=\"/lander\"}
+SF:</script></head></html>")%r(GenericLines,67,"HTTP/1\.1\x20400\x20Bad\x2
+SF:0Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection
+SF::\x20close\r\n\r\n400\x20Bad\x20Request")%r(RTSPRequest,67,"HTTP/1\.1\x
+SF:20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-
+SF:8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request")%r(Help,67,"HTT
+SF:P/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20char
+SF:set=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request")%r(SSLS
+SF:essionReq,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20te
+SF:xt/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x2
+SF:0Request")%r(LPDString,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConten
+SF:t-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n
+SF:400\x20Bad\x20Request")%r(SIPOptions,67,"HTTP/1\.1\x20400\x20Bad\x20Req
+SF:uest\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x2
+SF:0close\r\n\r\n400\x20Bad\x20Request")%r(Socks5,67,"HTTP/1\.1\x20400\x20
+SF:Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConn
+SF:ection:\x20close\r\n\r\n400\x20Bad\x20Request")%r(OfficeScan,A3,"HTTP/1
+SF:\.1\x20400\x20Bad\x20Request:\x20missing\x20required\x20Host\x20header\
+SF:r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20clos
+SF:e\r\n\r\n400\x20Bad\x20Request:\x20missing\x20required\x20Host\x20heade
+SF:r");
+Service Info: Device: load balancer
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Apr 20 11:51:07 2026 -- 1 IP address (1 host up) scanned in 48.95 seconds
