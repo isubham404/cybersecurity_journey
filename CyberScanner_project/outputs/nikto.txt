@@ -1,0 +1,10 @@
+- Nikto v2.1.5
+---------------------------------------------------------------------------
++ Target IP:          172.67.174.123
++ Target Hostname:    suiit.ac.in
++ Target Port:        443
++ Start Time:         2026-05-03 04:54:33 (GMT0)
+---------------------------------------------------------------------------
++ Server: cloudflare
++ The anti-clickjacking X-Frame-Options header is not present.
++ Uncommon header 'cf-ray' found, with contents: -
