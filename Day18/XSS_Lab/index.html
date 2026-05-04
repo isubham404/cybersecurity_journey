@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>XSS Lab</title>
+</head>
+<body>
+
+<h2>Search Page</h2>
+
+<input type="text" id="input">
+<button onclick="display()">Search</button>
+
+<p id="result"></p>
+
+<script>
+function display() {
+    let userInput = document.getElementById("input").value;
+
+    // intentionally vulnerable
+    document.getElementById("result").innerHTML = userInput;
+    document.cookie = "user=admin123";
+}
+</script>
+
+</body>
+</html>
