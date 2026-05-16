@@ -1,7 +1,6 @@
 # cybersecurity_journey
 # cybersecurity_journey
 My CyberSecurity journey and real life learning + projects 
-# 🚀 My 50-Day Cybersecurity Journey
 
 ## 👤 About Me
 
