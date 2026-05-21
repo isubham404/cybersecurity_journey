@@ -16,7 +16,6 @@
 * [Attack Types](#-attack-types)
 * [Common Errors & Fixes](#-common-errors--fixes)
 * [Security Insights](#-security-insights)
-* [Lab Exercises](#-lab-exercises)
 * [Future Scope](#-future-scope)
 * [Conclusion](#-conclusion)
 
