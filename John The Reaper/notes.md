@@ -249,45 +249,6 @@ cat hashes.txt
 
 ---
 
-## 🧪 Lab Exercises
-
-### Exercise 1
-
-Crack this hash:
-
-```text
-5f4dcc3b5aa765d61d8327deb882cf99
-```
-
----
-
-### Exercise 2
-
-Generate and crack your own password hash.
-
----
-
-### Exercise 3
-
-Perform brute-force attack:
-
-```bash
-john --incremental hashes.txt
-```
-
----
-
-### Exercise 4
-
-Use custom wordlist:
-
-```bash
-echo "mypassword123" > mylist.txt
-john --wordlist=mylist.txt hashes.txt
-```
-
----
-
 ## 🚀 Future Scope
 
 * Hashcat (GPU-based cracking)
