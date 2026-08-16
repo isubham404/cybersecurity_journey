@@ -15,7 +15,3 @@ let's stop being confused of choosing instead let's start.
 * Build small tools daily
 * Maintain GitHub streak
 
-/* ## 🔥 Commitment
-
-I will push at least one commit daily for the next 50 days. */
-
